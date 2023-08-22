@@ -12,13 +12,18 @@ export const CourseInput = (props) => {
     event.preventDefault();
     //binding enteredText to app components with prop onAddGoal
     props.onAddGoal(enteredValue);
+    setEnteredValue("");
   };
 
   return (
     <form onSubmit={formSubmitHandler}>
       <div className="form-control">
         <label>Course Goals</label>
-        <input type="text" onChange={goalInputChangeHandler}></input>
+        <input
+          type="text"
+          value={enteredValue}
+          onChange={goalInputChangeHandler}
+        ></input>
       </div>
       <Button type="submit">Add Goal</Button>
     </form>
