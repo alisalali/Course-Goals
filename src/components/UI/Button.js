@@ -1,6 +1,9 @@
-import styled from "styled-components";
+import React from "react";
+import styles from "./Button.module.css";
 
-const Button = styled.button`
+
+// import styled from "styled-components";
+/* const Button = styled.button`
   font: inherit;
   padding: 0.5rem 1.5rem;
   border: 1px solid #8b005d;
@@ -23,12 +26,14 @@ const Button = styled.button`
     border-color: #ac0e77;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
   }
-`;
-// const Button = (props) => {
-//   return (
-//     <button type={props.type} onClick={props.onClick} className="button">
-//       {props.children}
-//     </button>
-//   );
+`; */
 
+
+const Button = (props) => {
+  return (
+    <button type={props.type} onClick={props.onClick} className={styles.button}>
+      {props.children}
+    </button>
+  );
+};
 export default Button;
