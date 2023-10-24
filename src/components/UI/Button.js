@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Button.module.css";
 
-
 // import styled from "styled-components";
 /* const Button = styled.button`
   font: inherit;
@@ -27,7 +26,6 @@ import styles from "./Button.module.css";
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
   }
 `; */
-
 
 const Button = (props) => {
   return (
