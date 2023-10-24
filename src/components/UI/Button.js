@@ -7,8 +7,12 @@ const Button = styled.button`
   color: white;
   background: #8b005d;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  width: 100%;
   cursor: pointer;
 
+  @media (min-width: 768px) {
+    width: auto;
+  }
   &:focus {
     outline: none;
   }
